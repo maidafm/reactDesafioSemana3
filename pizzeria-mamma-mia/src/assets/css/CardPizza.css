@@ -1,0 +1,50 @@
+.card-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px; /* Optional padding */
+  position: relative;
+  
+}
+
+.card {
+    margin: 15px; /* Espacio entre las tarjetas */
+    border: 1px solid #ddd; /* Borde de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Para evitar que la imagen sobresalga */  
+  }
+  
+  .card-img-top {
+    height: 200px; /* Altura fija para la imagen */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+  }
+  
+  .card-body {
+    text-align: center; /* Centra el texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-ingredients {
+    font-size: 14px; /* Tamaño de fuente para ingredientes */
+    margin: 10px 0; /* Espaciado vertical */
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .card-ingredients p {
+    margin-top: 1rem;
+  }
+
+  .card-price {
+    font-weight: bold; /* Negrita para el precio */
+    font-size: 1.5rem;
+    margin: 10px 0; /* Espaciado vertical */
+  }
+  
+  .card-buttons {
+    display: flex;
+    justify-content: space-around; /* Espacio entre los botones */
+  }
