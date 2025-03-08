@@ -3,33 +3,33 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 20px; /* Optional padding */
+  padding: 20px; 
   position: relative;
   
 }
 
 .card {
-    margin: 15px; /* Espacio entre las tarjetas */
-    border: 1px solid #ddd; /* Borde de la tarjeta */
-    border-radius: 10px; /* Bordes redondeados */
-    overflow: hidden; /* Para evitar que la imagen sobresalga */  
+    margin: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    overflow: hidden; 
   }
   
   .card-img-top {
-    height: 200px; /* Altura fija para la imagen */
-    object-fit: cover; /* Mantiene la proporción de la imagen */
+    height: 200px; 
+    object-fit: cover; 
   }
   
   .card-body {
-    text-align: center; /* Centra el texto */
+    text-align: center; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
   
   .card-ingredients {
-    font-size: 14px; /* Tamaño de fuente para ingredientes */
-    margin: 10px 0; /* Espaciado vertical */
+    font-size: 14px; 
+    margin: 10px 0; 
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
   }

@@ -1,18 +1,18 @@
 .Home {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack children vertically */
-    height: 100vh; /* Full viewport height */
+    display: flex; 
+    flex-direction: column; 
+    height: 100vh; 
 }
 
 .header {
-    flex: 0 1 30%; /* Allow the header to take up 30% of the viewport height */
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    position: relative; /* For absolute positioning of header content */
+    flex: 0 1 30%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: relative; 
 }
 
 .card-container {
-    flex: 1; /* Take up remaining space */
+    flex: 1; 
 }
 
