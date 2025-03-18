@@ -1,18 +1,32 @@
 .Home {
-    display: flex; 
-    flex-direction: column; 
-    height: 100vh; 
+    display: grid;
+    grid-template-rows: 25% 75%;
+    grid-template-areas:
+    "header"
+    "main";
 }
 
-.header {
-    flex: 0 1 30%; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    position: relative; 
+.Header {
+    grid-area: header;
 }
 
 .card-container {
-    flex: 1; 
+    grid-area: main;
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    overflow-x: auto;
 }
 
+@media (min-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);  
+    }
+}
+
+@media (max-width: 767px) {
+    .card-container {
+        grid-template-rows: 1fr;
+    }
+    
+}

@@ -6,29 +6,41 @@ const Navbar = () => {
   const total = 25000;
   const token = false;
 
-
   return (
-    <nav className="navbar">
-      <div className="navbar-content">
-        <span className="navbar-title">Pizzería Mamma Mia!</span>
-        <div className="navbar-buttons">
-          <Button>🍕 Home</Button>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a className="navbar-brand" href="#">Pizzería Mamma Mia!</a>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav navbar-buttons">
+          <li className="nav-item">
+            <Button className="btn btn-dark">🍕 Home</Button>
+          </li>
           {token ? (
             <>
-              <Button>🔓 Profile</Button>
-              <Button>🔒 Logout</Button>
+              <li className="nav-item">
+                <Button className="btn btn-dark">🔓 Profile</Button>
+              </li>
+              <li className="nav-item">
+                <Button className="btn btn-dark">🔒 Logout</Button>
+              </li>
             </>
           ) : (
             <>
-              <Button>🔐 Login</Button>
-              <Button>🔐 Register</Button>
+              <li className="nav-item">
+                <Button className="btn btn-dark">🔐 Login</Button>
+              </li>
+              <li className="nav-item">
+                <Button className="btn btn-dark">🔐 Register</Button>
+              </li>
             </>
           )}
-        </div>
+          <li className="nav-item total-button">
+            <Button id="Total" className="btn btn-transparent">🛒 Total: ${total.toLocaleString()}</Button>
+          </li>
+        </ul>
       </div>
-      <div className='total-button'>
-            <Button id="Total">🛒 Total: ${total.toLocaleString()}</Button>
-        </div>
     </nav>
   );
 };
