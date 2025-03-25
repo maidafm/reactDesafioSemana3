@@ -2,6 +2,7 @@ import React from 'react';
 import '../assets/css/CardPizza.css';
 
 const CardPizza = ({ name, price, ingredients, img }) => {
+
   return (
     <div className="card">
       <img src={img} className="card-img-top" alt={name} />

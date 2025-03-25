@@ -36,7 +36,7 @@ const Navbar = () => {
               </li>
             </>
           )}
-          <li className="nav-item total-button">
+          <li className="nav-item total-button ml-auto">
             <Button id="Total" className="btn btn-transparent">🛒 Total: ${total.toLocaleString()}</Button>
           </li>
         </ul>
